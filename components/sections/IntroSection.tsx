@@ -80,11 +80,7 @@ export default function IntroSection() {
             stays ahead of demand. The hero above is a living prototype of the
             motion and spatial craft we bring into every engagement.
           </p>
-          <div
-            data-intro
-            className="mt-10 grid gap-6 sm:grid-cols-3"
-            id="contact"
-          >
+          <div data-intro className="mt-10 grid gap-6 sm:grid-cols-3">
             {[
               { label: "AI Systems", detail: "Applied research to production" },
               { label: "Software", detail: "Platforms built to compound" },

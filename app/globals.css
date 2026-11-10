@@ -8,6 +8,7 @@
   --aw-yellow: #efff00;
   --aw-light: #f3f3f1;
   --aw-light-grey: #ececec;
+  --aw-private: #f5f7fa;
   --aw-muted: #5c5c5c;
   --aw-ink: #121212;
   --background: var(--aw-charcoal);
@@ -24,6 +25,7 @@
   --color-aw-yellow: var(--aw-yellow);
   --color-aw-light: var(--aw-light);
   --color-aw-light-grey: var(--aw-light-grey);
+  --color-aw-private: var(--aw-private);
   --color-aw-muted: var(--aw-muted);
   --color-aw-ink: var(--aw-ink);
   --font-sans: var(--font-manrope);
