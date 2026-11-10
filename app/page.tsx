@@ -1,3 +1,4 @@
+import BusinessProblemsSection from "@/components/sections/BusinessProblemsSection";
 import ContactSection from "@/components/sections/ContactSection";
 import CustomSoftwareSection from "@/components/sections/CustomSoftwareSection";
 import CybersecuritySection from "@/components/sections/CybersecuritySection";
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <main className="flex min-h-full flex-1 flex-col">
       <Hero />
+      <BusinessProblemsSection />
       <ServicesSection />
       <PrivateAISection />
       <CustomSoftwareSection />
