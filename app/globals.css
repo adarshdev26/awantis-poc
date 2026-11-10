@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --aw-charcoal: #232323;
+  --aw-charcoal-deep: #171717;
+  --aw-blue: #051df9;
+  --aw-blue-soft: #3a4cff;
+  --aw-yellow: #efff00;
+  --aw-light: #f3f3f1;
+  --aw-light-grey: #ececec;
+  --aw-muted: #5c5c5c;
+  --aw-ink: #121212;
+  --background: var(--aw-charcoal);
+  --foreground: #f5f5f5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-aw-charcoal: var(--aw-charcoal);
+  --color-aw-charcoal-deep: var(--aw-charcoal-deep);
+  --color-aw-blue: var(--aw-blue);
+  --color-aw-blue-soft: var(--aw-blue-soft);
+  --color-aw-yellow: var(--aw-yellow);
+  --color-aw-light: var(--aw-light);
+  --color-aw-light-grey: var(--aw-light-grey);
+  --color-aw-muted: var(--aw-muted);
+  --color-aw-ink: var(--aw-ink);
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-syne);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-manrope), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-syne), sans-serif;
+}
+
+.aw-grain {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.08;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.aw-hero-glow {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 48% 42% at 76% 40%, rgba(5, 29, 249, 0.38), transparent 68%),
+    radial-gradient(ellipse 28% 30% at 68% 58%, rgba(58, 76, 255, 0.14), transparent 70%),
+    radial-gradient(ellipse 55% 40% at 12% 20%, rgba(5, 29, 249, 0.08), transparent 60%),
+    radial-gradient(ellipse 90% 55% at 50% 115%, rgba(0, 0, 0, 0.55), transparent 50%),
+    linear-gradient(165deg, #1f1f1f 0%, #232323 42%, #1a1a1a 100%);
+}
